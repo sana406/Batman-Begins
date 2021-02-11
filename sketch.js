@@ -13,13 +13,14 @@ function setup(){
   engine = Engine.create();
   world = engine.world;
   var canvas = createCanvas(600, 600);
-  man = createSprite(width/2, 580, 70, 70);
-  man = loadImage("manImage");
+  Engine.run(engine);
+  
     
 }
 
 function draw(){
     background("black");
      Engine.update(engine);
+   image(manImage,0,0,50,50);
 }   
 
